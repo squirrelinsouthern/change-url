@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>window.history.pushState()</title>
+</head>
+<body>
+    <button id="abtn">a</button>
+    <button id="bbtn">b</button>
+    <div id="content"></div>
+
+    <script>
+    abtn.onclick=()=>{
+        window.history.pushState(null,'aaa','/history.html/a')
+    }
+    bbtn.onclick=()=>{
+        window.history.pushState(null,'bbb','/history.html/b')
+    }
+    </script>
+</body>
+</html>
